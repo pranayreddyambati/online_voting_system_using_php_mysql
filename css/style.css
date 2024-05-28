@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.left {
+    background-color: #000080;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.logo-text > h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.btn-container {
+    padding-top: 2rem;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 60%;
+    height: 100vh;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    font-weight: 600;
+    display: flex;
+    background-color: white;
+    width: 10rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #000080;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px; /* Adjusted padding for better spacing */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9f9f9f; /* Added hover effect for logout button */
+}

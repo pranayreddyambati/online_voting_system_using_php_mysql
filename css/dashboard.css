@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #000080;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /* Changed to space-between for better spacing */
+    padding: 15px ; /* Adjusted padding for better spacing */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header > a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo-text h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.logout {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    color: #000080;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px; /* Adjusted padding for better spacing */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #e0e0e0; /* Added hover effect for logout button */
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 24;
+    margin-left: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 30px 30px 30px; /* Adjusted padding to account for fixed header */
+    gap: 30px; /* Added gap between left and right sections */
+}
+
+.left {
+    width: 25%;
+    position: fixed;
+}
+
+.left h3 {
+    margin-bottom: 2px; /* Added margin for better spacing */
+}
+
+.left input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 2px; /* Added margin for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Added background color for readonly inputs */
+}
+
+.right {
+    padding-left: 25%;
+    width: 75%;
+}
+
+.vote-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.right > table {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+table th,
+table td {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #000080;
+    color: white;
+}
+
+.vote {
+    background-color: #000080;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vote:hover {
+    background-color: #000066;
+}
+
+.vote p {
+    padding-right: 5px;
+}
+
+.vote .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+
+.vote.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+/* Modal styling */
+.vote.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 2rem;
+    width: 25rem;
+}
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-footer button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: calc(2rem - 20px);
+}
+
+#confirmVote {
+    background-color: #000080;
+    color: white;
+}
+
+#confirmVote:hover {
+    background-color: #000066;
+}
+
+#cancelVote {
+    padding: 10px 15px;
+}
+
+.normal-txt {
+    margin: 0;
+    padding: 0;
+}
+
+#party-symbol {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        background-color: #f8f8f8;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left {
+        height: 15vh;
+        padding-left: 0;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        padding-top: 4rem;
+        padding-right: 1rem;
+    }
+
+    .logo > img {
+        width: 50%;
+        height: 50%;
+    }
+    .right {
+        height: 60vh;
+        padding-top: 3rem;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"], input[type="number"], select, input[type="submit"] {
+        width: calc(100% - 20px);
+    }
+
+    .modal-content {
+        width: 80%;
+        margin: 60% 3%;
+    }
+
+    .close {
+        left: 10px;
+        bottom: 10px;
+    }
+}
