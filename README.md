@@ -1,13 +1,13 @@
-#<h2>Online Voting System using PHP & MySQL</h2>
+# <h2>Online Voting System using PHP & MySQL</h2>
 
-##<h3>Description:</h3>
+## <h3>Description:</h3>
 <p>The online voting system is a web application developed using PHP and MySQL technologies. It aims to simulate a basic
     voting process where users can log in, cast their votes, and view the election results. The system is designed to
     showcase the implementation of fundamental functionalities typically found in real-world voting systems.</p>
 
 Visit the live site: [Online Voting Platform](online-voting-platform.infinityfreeapp.com/?i=1)
 
-##<h3>Key Features:</h3>
+## <h3>Key Features:</h3>
 
 <h4>User Authentication:</h4>
 <ul>
@@ -46,7 +46,7 @@ Visit the live site: [Online Voting Platform](online-voting-platform.infinityfre
     <li>Provided a user-friendly interface for users to easily interpret the election results.</li>
 </ul>
 
-##<h3>Execution:</h3>
+## <h3>Execution:</h3>
 <ol>
     <li>Ensure that you have a web server environment with PHP and MySQL installed. You can use platforms like XAMPP,
         WAMP, or MAMP for local development.</li>
@@ -63,19 +63,19 @@ Visit the live site: [Online Voting Platform](online-voting-platform.infinityfre
     </li>
 </ol>
 
-###<h3>Mobile Responsiveness:</h3>
+### <h3>Mobile Responsiveness:</h3>
 <p>While the primary focus of the application is on demonstrating PHP and MySQL functionalities, mobile responsiveness
     was not a priority during development. As a result, the application may not provide an optimal user experience on
     mobile devices with smaller screens. However, users can still access and interact with the system using desktop or
     laptop computers.</p>
 
-###<h3>Purpose:</h3>
+### <h3>Purpose:</h3>
 <p>The purpose of this web application is to serve as a learning tool for individuals interested in understanding the
     implementation of key functionalities in PHP and MySQL-based web applications. It provides a practical example of
     how to develop an online voting system while emphasizing security, data validation, and database management
     principles.</p>
 
-###<h3>Disclaimer:</h3>
+### <h3>Disclaimer:</h3>
 <p>This application is developed for educational purposes only and should not be used in real-world elections. It may
     lack certain features and security measures necessary for handling sensitive voter data in a real-world scenario.
     Users are encouraged to use this application responsibly and adhere to ethical guidelines when interacting with the
