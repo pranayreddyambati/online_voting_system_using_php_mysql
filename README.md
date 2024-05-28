@@ -51,7 +51,7 @@ The purpose of this web application is to serve as a learning tool for individua
 This application is developed for educational purposes only and should not be used in real-world elections. It may lack certain features and security measures necessary for handling sensitive voter data in a real-world scenario. Users are encouraged to use this application responsibly and adhere to ethical guidelines when interacting with the system.
 
 ## Author
-Developed by [Your Name](https://github.com/pranayreddyambati).
+Developed by [Pranay Reddy Ambati](https://github.com/pranayreddyambati).
 
 ## Acknowledgments
 - PHP
