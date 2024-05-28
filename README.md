@@ -5,7 +5,7 @@
     voting process where users can log in, cast their votes, and view the election results. The system is designed to
     showcase the implementation of fundamental functionalities typically found in real-world voting systems.</p>
 
-Visit the live site: [Online Voting Platform](online-voting-platform.infinityfreeapp.com/?i=1)
+Visit the live site: <a href="online-voting-platform.infinityfreeapp.com/?i=1">Online Voting Platform</a>
 
 ## <h3>Key Features:</h3>
 
